@@ -1,5 +1,6 @@
 ########## En Python los tipos de datos son objetos #####################
 ### Para definir una variable en Python simplemente lo hacemos de la siguiente forma
+### Ejecuto un cambio para probar el repositorio
 x = 4 ## Entero
 y = 4.0 ## Decimal
 nombre = "Facundo"
