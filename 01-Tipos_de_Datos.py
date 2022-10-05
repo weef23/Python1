@@ -10,7 +10,6 @@ nombre = "Facundo"
 z= x+y ## Esto si es posible tomara el tipo de mayor jerarquia en este caso decimal
 print(z)
 ### Conversion de tipos de datos
-
 ### Valores de entrada
 numero = input("Escribe un numero: ")
 numero2 = input("Escribe un numero: ")
