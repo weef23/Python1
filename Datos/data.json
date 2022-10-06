@@ -1,19 +1,6 @@
 {
-  "Algebra" : [{"Autor": "N. Piskunov",
-                    "Titulo":"Calculo diferencial Tomo 1",
-                    "Editorial": "MIR",
-                    "Area" :  "Matematicas"},
-                     {"Autor": "N. Piskunov",
-                    "Titulo":"Calculo diferencial Tomo 2",
-                    "Editorial": "MIR",
-                    "Area" :  "Matematicas"},
-                     {"Autor": "V. V. Voevodin",
-                    "Titulo":"Algebra Lineal",
-                    "Editorial": "MIR",
-                    "Area" :  "Matematicas"}
-  ],
-  "Geometria": [{"Autor": "G. N. Yakovliev",
-                    "Titulo":"Geometria Euclidiana",
-                    "Editorial": "MIR",
-                    "Area" :  "Matematicas"}]
+  "Algebra" : [{"Autor": "N. Piskunov", "Titulo":"Calculo diferencial Tomo 1", "Editorial": "MIR", "Area" :  "Matematicas"},
+               {"Autor": "N. Piskunov", "Titulo":"Calculo diferencial Tomo 2", "Editorial": "MIR", "Area" :  "Matematicas"},
+               {"Autor": "V. V. Voevodin", "Titulo":"Algebra Lineal", "Editorial": "MIR", "Area" :  "Matematicas"}],
+  "Geometria": [{"Autor": "G. N. Yakovliev", "Titulo":"Geometria Euclidiana", "Editorial": "MIR", "Area" :  "Matematicas"}]
 }
