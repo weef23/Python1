@@ -1,13 +1,11 @@
 import random
 
-
 def verificarValor(valor):
     if (str.isnumeric(valor)):
         return int(valor)
     else:
         print("Solo es posible convertir valores numericos")
         exit(0)
-
 
 ############################Funcion Aprende a sumar#####################################################################
 def aprenderSumar():
