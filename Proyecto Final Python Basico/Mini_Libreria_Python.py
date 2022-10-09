@@ -44,6 +44,8 @@ def visualizarLibros(data, seccion):
         print(f" Editorial: {libro['Editorial']}")
         print(f" Area: {libro['Area']}")
 
+def agregarLibro(seccion):
+    pass
 
 ############################################################################################################
 def run():
