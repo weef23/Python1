@@ -1,18 +1,21 @@
 import json
 
+
 ########################################################################################################
 ####### Abre el archivo json en donde tenemos nuestra base de datos ####################################
 def abrirBD():
     with open("../Datos/data.json") as data_base:
         data = json.load(data_base)
         return data
+
+
 ######### Visualizar seccion
 def visualizarSeccion(datos):
     cont = 1
     print("Las secciones disponibles son las siguientes")
     for seccion in datos.keys():
         print(f"{cont} - {seccion}")
-        cont+=1
+        cont += 1
     menu = """
             Que desea hacer? 
             1- Listar Libros disponibles
@@ -28,13 +31,16 @@ def visualizarSeccion(datos):
             break
         elif opcion == '1':
             seccion = input("Escriba la seccion que desea visualizar ")
-            visualizarLibros(datos,seccion)
+            visualizarLibros(datos, seccion)
+        elif opcion == '2':
+            seccion = input("Escriba la seccion donde desea agregar el libro: ")
+            agregarLibro(datos,seccion)
         else:
             print("La opcion seleccionada no es correcta.")
 
+
 #####  Visualizar libros
 def visualizarLibros(data, seccion):
-
     seccion = data[seccion]
 
     for libro in seccion:
@@ -44,8 +50,34 @@ def visualizarLibros(data, seccion):
         print(f" Editorial: {libro['Editorial']}")
         print(f" Area: {libro['Area']}")
 
-def agregarLibro(seccion):
-    pass
+#### Agrega una nuevo libro a la seccion que nosotros elijamos.
+def agregarLibro(data, seccion):
+    nuevoLibro = {}
+
+    ##### Solicitamos el autor del libro
+    autor = input("Ingrese por el autor del libro: ")
+    #### Solicitamos el Titulo del Libro
+    titulo = input("Ingrese el titulo del libro: ")
+    ### Solicitamos la editorial del libro
+    editorial = input("Ingrese la editorial del libro: ")
+    ### Solicitamos el Area del Libro
+    area = input("Solicitamos el area del libro: ")
+
+    #### Agregamos el nuevo libro a la biblioteca
+    nuevoLibro.update({"Autor": autor})
+    nuevoLibro.update({"Titulo": titulo})
+    nuevoLibro.update({"Editorial": editorial})
+    nuevoLibro.update({"Area": area})
+
+    seccionLibros = data[seccion]
+    ## Las listas en python al asignarse a otra varible los que hacemos realmente
+    ## es reasignar la referencia hacia otra variable, por lo que cualquier cambio
+    ## que hagamos en la lista la anterior la conservara, nos aprovecharemos de este
+    ## comportamiento para agregar un nuevo registro a nuestra mini biblioteca.
+    seccionLibros.append(nuevoLibro)
+    ### Visualizaos la seccion que acabamos de modificar
+    visualizarLibros(data, seccion)
+
 
 ############################################################################################################
 def run():
@@ -73,6 +105,7 @@ def run():
             visualizarSeccion(datos)
         else:
             print("Opcion incorrecta")
+
 
 if __name__ == "__main__":
     run()
