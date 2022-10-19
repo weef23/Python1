@@ -11,7 +11,7 @@ alfabeto = letras + digitos + caracteres  ## Con esto definimos el alfabeto que 
 
 longitud = 12
 
-############# Genera el Password 
+############# Genera el Password
 while True:
     pwd = ''
     for i in range(longitud):
