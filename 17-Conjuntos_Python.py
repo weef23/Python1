@@ -78,7 +78,6 @@ forma = {"Circulo", "Cuadrado","Triangulo","Estrella"}
 conjunto_interseccion = figuras_geometricas.intersection(forma)
 print(conjunto_interseccion)
 
-
 ### Lo que esta en A pero no en B (A-B)
 diferencia = forma.difference(figuras_geometricas)
 print(diferencia)
