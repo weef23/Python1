@@ -27,6 +27,8 @@ print(pares)
 impares = [(i * 2) + 1 for i in range(1, 100) if i % 2 != 0]
 print(impares)
 
+[print(imp) for imp in impares]
+
 ####### Tambien podemos usar el mismo principio de list comprenhesion a los diccionario
 #### Sintaxis clave:valor + Ciclo + condicion
 
@@ -52,3 +54,10 @@ print(nuevo_dic)
 
 poblacion_densa = {pais: poblacion for (pais, poblacion) in poblacion.items() if poblacion > 400}
 print(poblacion_densa)
+
+### Extraer las vocales de una cadena
+
+cadena= "Hola soy una cadena y me van a extraer las vocales"
+
+vocales = {c: c.upper() for c in cadena if c in 'aeiou'}
+print(vocales)

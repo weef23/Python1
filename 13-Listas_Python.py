@@ -62,3 +62,15 @@ mi_otra_tupla = (4, 5, 6)
 mi_tupla=mi_tupla + mi_otra_tupla
 print(mi_tupla)
 ################################################################################################
+################### Un ejemplo de if inline bastante interesante
+lista = [1, 2, 5, 25, 33, 56, 75, 21, 56, 89, 43, 13, 62, 24]
+### Verificamos si el 21 esta en la lista, una forma elegante de expresar un condicional
+### En una sola linea
+print("Esta en la lista") if 21 in lista else print("No esta en la lista")
+###################################################################################################
+tupla = ('Juan', 'Antonio', 'Pedro', 'Maria')
+
+dato = input("Digite el dato que desea buscar: ")
+
+### La misma forma elegante pero para las tuplas
+print("Si esta en la tupla") if dato in tupla else print("No esta en la tupla")
