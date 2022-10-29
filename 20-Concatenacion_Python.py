@@ -20,7 +20,7 @@ print(f"Esto es un entero {numero_entero}")
 
 numero_flotante = 3.14159
 ##Con los flotantes ocurre exactamente lo mismo
-print("Esto es un flotante",numero_flotante)
+print("Esto es un flotante", numero_flotante)
 ### Podemos usar el %f para indicarle a Python que estos es un flotante.
 print("Esto es un flotante %f"%(numero_flotante))
 ### Esta forma es interesante porque podemos indicar el numero de decimales
@@ -29,7 +29,7 @@ print("Esto es un flotante %f"%(numero_flotante))
 print("Esto es un numero flotante %.2f"%(numero_flotante))
 
 ## Algo muy interesante es end dentro del print
-print("Tu nombre es ",end="")
+print("Tu nombre es ", end="")
 ## Con el end si nosotros ejecutamos otro print no se ejecutara un salto de linea
 ## Se integrara a la linea escrita anteriormente, estos son trucos muy interesantes.
 print("Hola mundo")
