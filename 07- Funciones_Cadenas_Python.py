@@ -35,4 +35,12 @@ print(nombre[::-1])
 ## La funcion len me da la logitud de caractes
 print(len(cadena2))
 
-
+### La siguiente funcion nos ayuda a buscar la posicion de un caracter especifico
+#### Funcion find para buscar cadenas de caracteres.
+print(cadena2.find('A'))
+### Funcion rfind busca el ultima letra
+print(cadena2.rfind('A'))
+#Anteriormente vimos la funcion lower para convertir una cadena en mayusculas
+## Sin embargo existe una funcion llamada islower que permite veridicar si una cadena esta o no en minusculas
+cadena_minunscula = "esta cadena esta en minuscula"
+print(cadena_minunscula.islower()) ## Nos regresa True.
