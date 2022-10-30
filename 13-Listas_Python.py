@@ -41,6 +41,13 @@ print(lista)
 
 ### Sorted nos devuelve la lista de forma ordenada
 print(sorted(mylista))  ## Puede generar error cuando tenemos elementos de distintos tipos
+## Tambien podemos usar el metodo sort
+print("lista invertida ",end="")
+lista_invertida = [1,2,3,4,5,6,7,8,9]
+## Invertimos la lista
+lista_invertida.sort(reverse=True)
+print(lista_invertida)
+
 ### El operador + nos permite concatenar dos listas
 lista2 = lista + mylista
 print(lista)
