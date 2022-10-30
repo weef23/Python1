@@ -44,3 +44,5 @@ print(cadena2.rfind('A'))
 ## Sin embargo existe una funcion llamada islower que permite veridicar si una cadena esta o no en minusculas
 cadena_minunscula = "esta cadena esta en minuscula"
 print(cadena_minunscula.islower()) ## Nos regresa True.
+## Tambien podemos validar si una cadena esta toda en mayusculas
+print(cadena_minunscula.isupper()) ## Nos retorna False
