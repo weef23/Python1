@@ -55,7 +55,11 @@ print(mylista)
 print(lista2)  ## Lista concatenada
 ## El operador * nos permite replicar una lista un numero n de veces
 print(mylista * 6)
-######################## Tuplas en Python ###########################################
+
+## El metodo counto nos permita contar cuantos elementos hay en una lista
+lista_count = [11,2,2,4,2,5,3,25,4,5]
+print("El numero 4 esta :",lista_count.count(4))
+###################0##### Tuplas en Python ###########################################
 ### Las Tuplas son un tipo de coleccion muy similar a las tuplas pero con la diferencia
 ### Que las listas son dinamicas, las tuplas son colecciones que no se pueden modificar
 ## Lo que las hace mas eficiente cuando tienes elementos que necesitas que no se modifiquen.
