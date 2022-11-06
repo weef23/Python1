@@ -25,9 +25,7 @@ def run():
     print("Adultos ")
     for w in adultos:
         print(w)
-
-
-
+########################################################################################################################
 ## Funcion de arranque de librerias.
 if __name__ == "__main__":
     run()
