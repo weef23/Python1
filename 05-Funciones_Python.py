@@ -1,8 +1,10 @@
 ##############################################################################################################
 ###### Ejemplo de funciones en Python
 
+## Para definir una funcion usamos la palabra def
 ## Este es un ejemplo de una funcion basica, no recibe parametros ni retorna valores
 ## Solo ejecuta un fragmento de codigo
+
 def imprimirMensaje():
     print("Mensaje especial: ")
     print("Estoy aprendiendo a usar funciones: ")
