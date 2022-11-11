@@ -34,6 +34,8 @@ def lista_Nombre(*args):
 def suma_Numeros(*args):
     return reduce(lambda a, b: a+b, args) ## Es muy util realizar esto con reduce
 
+## Otra ventaja interesande de Python
+
 ###############################################################################################################
 ## Invocacion de la funcion de imprimir mensaje
 imprimirMensaje()
