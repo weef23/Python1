@@ -1,6 +1,6 @@
 ##############################################################################################################
 ###### Ejemplo de funciones en Python
-
+from functools import  reduce
 ## Para definir una funcion usamos la palabra def
 ## Este es un ejemplo de una funcion basica, no recibe parametros ni retorna valores
 ## Solo ejecuta un fragmento de codigo
@@ -22,6 +22,18 @@ def suma(a,b):
     print("Se suman dos numero: ")
     resultado = a + b
     return resultado
+
+###### USO DE ARGUMENTOS VARIABLES
+## Los argumentos variables de una funcion van precedidos de un asterisco *
+## Si bien se puede usar cualquier nombre se recomienda el uso de *args
+def lista_Nombre(*args):
+    for nombre in args:
+        print(f"Hola {nombre}")
+
+## Ejemplo de suma usando *arg
+def suma_Numeros(*args):
+    return reduce(lambda a, b: a+b, args) ## Es muy util realizar esto con reduce
+
 ###############################################################################################################
 ## Invocacion de la funcion de imprimir mensaje
 imprimirMensaje()
@@ -41,3 +53,8 @@ else:
 
 resultado = suma(2,3)
 print(resultado)
+
+## Podemos enviar mas de un valor a la vez
+lista_Nombre("Juan", "Pedro", "Jose")
+## Ejemplo de suma usando args
+print(f"La suma de valores {suma_Numeros(1,2,3,4,5)}")
