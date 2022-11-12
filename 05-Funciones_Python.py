@@ -34,7 +34,11 @@ def lista_Nombre(*args):
 def suma_Numeros(*args):
     return reduce(lambda a, b: a+b, args) ## Es muy util realizar esto con reduce
 
-## Otra ventaja interesande de Python
+## Otra ventaja interesande de Python son los parametros dinamicos clave valor
+## Para declarar este tipo de argumentos es necesario colocar dos **  antes del nombre
+def lista_Terminos(**terminos):
+    for llave,valor in terminos.items():
+        print(f"Llave {llave}  => Valor {valor}")
 
 ###############################################################################################################
 ## Invocacion de la funcion de imprimir mensaje
@@ -60,3 +64,5 @@ print(resultado)
 lista_Nombre("Juan", "Pedro", "Jose")
 ## Ejemplo de suma usando args
 print(f"La suma de valores {suma_Numeros(1,2,3,4,5)}")
+
+lista_Terminos(Nombre="Jose", Apellido="Martinez", Edad="18")
