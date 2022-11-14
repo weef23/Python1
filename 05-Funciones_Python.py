@@ -40,6 +40,18 @@ def lista_Terminos(**terminos):
     for llave,valor in terminos.items():
         print(f"Llave {llave}  => Valor {valor}")
 
+##### Funciones Recursivas
+## La funciones recursivas son funciones que se llaman asi mismas, a continuacion
+## Definimos una funcion que calcula el factorial de un numero usando Funciones recursivas
+## Es de saber que este tipo de funciones son muy costosas computacionalmente
+## Se deben utilizar unicamente en situaciones especiales.
+def factorial(numero):
+    if numero == 1:
+        return 1
+    else:
+        ## Mandamos a llamar a la funcion nuevamente
+        return numero * factorial(numero - 1)
+
 ###############################################################################################################
 ## Invocacion de la funcion de imprimir mensaje
 imprimirMensaje()
@@ -66,3 +78,5 @@ lista_Nombre("Juan", "Pedro", "Jose")
 print(f"La suma de valores {suma_Numeros(1,2,3,4,5)}")
 
 lista_Terminos(Nombre="Jose", Apellido="Martinez", Edad="18")
+
+print(f"El facotrial del numer es {factorial(5)}")
